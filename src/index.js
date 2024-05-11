@@ -8,7 +8,7 @@ const dates = [
 
 const isFutureDay = (date) => {
   const currentDate = new Date();
-  const inputDate = parse(date, 'yyyy-MM-dd', currentDate);
+  const inputDate = parse(date, 'yyyy-MM-dd', {locale:currentDate});
   console.log(inputDate);
 
   return currentDate < inputDate;
